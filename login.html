@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img class="logo" src="imagenes/web.png" alt="logo">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="boton" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="globe">
+        <img src="imagenes/kisspng-globe-.png" alt="">
+    </div>
+    <div class="login">
+        <h2>Login</h2>
+        <form id="forma" name="forma" method="post">
+            <div class="elemento">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required="true"/>
+            </div>
+            <div class="elemento">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required="true"/>
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Enviar"/>
+            </div>
+        </form>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

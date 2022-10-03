@@ -1,0 +1,321 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background: url(../imagenes/Background_-_11.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+}
+
+.boton{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.boton span{
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li{
+    padding: 0 30px;
+    list-style-type: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.enlaces-menu li:hover{
+    background-color: rgb(62, 130, 197);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.cover{
+    max-width: 1200px;
+    background: rgba(255, 255, 255, .2);
+    height: 450px;
+    margin: auto;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.cover h1{
+    font-size: 60px;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+.cover p{
+    max-width: 400px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+.cover img{
+    width: 60px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+form{
+    margin-left: 700px;
+    margin-top: -360px;
+}
+
+form label{
+    font-size: 20px;
+}
+
+form input{
+    width: 50%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+form input[type="submit"]{
+    cursor: pointer;
+}
+
+form ::placeholder{
+    color: black;
+}
+
+form textarea{
+    width: 50%;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media (max-width:768px){
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        margin-left: 25px;
+    }
+
+    .boton{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+        -webkit-transition: 0.2s 0.1s;
+        -moz-transition: 0.2s 0.1s;
+        -ms-transition: 0.2s 0.1s;
+        -o-transition: 0.2s 0.1s;
+    }
+
+    .boton:hover{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+    }
+    
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cover{
+        max-width: 650px;
+        margin-top: -100px;
+        background: rgba(255, 255, 255, .2);
+        height: 400px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .cover h1{
+        font-size: 40px;
+        margin-left: 60px;
+        margin-top: 100px;
+    }
+
+    .cover p{
+        max-width: 200px;
+        text-align: center;
+        font-size: 17px;
+        margin-left: 60px;
+        margin-bottom: 50px;
+
+    }
+
+    .cover img{
+        width: 30px;
+        height: 30px;
+        margin-left: 60px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    form{
+        margin-left: 360px;
+        margin-top: -300px;
+    }
+    
+    form label{
+        font-size: 20px;
+    }
+
+    form input{
+        width: 80%;
+        padding: 10px;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    form input[type="submit"]{
+        cursor: pointer;
+    }
+    
+    form ::placeholder{
+        color: black;
+    }
+
+    form textarea{
+        width: 80%;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+@keyframes muestraMenu {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+    -webkit-animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+    -webkit-transform: rotate(-45deg) translate(-10px, 8px);
+    -moz-transform: rotate(-45deg) translate(-10px, 8px);
+    -ms-transform: rotate(-45deg) translate(-10px, 8px);
+    -o-transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+    -webkit-transform: rotate(45deg) translate(-10px, -8px);
+    -moz-transform: rotate(45deg) translate(-10px, -8px);
+    -ms-transform: rotate(45deg) translate(-10px, -8px);
+    -o-transform: rotate(45deg) translate(-10px, -8px);
+}

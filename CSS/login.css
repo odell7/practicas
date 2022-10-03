@@ -1,0 +1,249 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background: url(../imagenes/Background_-_11.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+}
+
+.boton{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.boton span{
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li{
+    padding: 0 30px;
+    list-style-type: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.enlaces-menu li:hover{
+    background-color: rgb(62, 130, 197);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.globe{
+    max-width: 200px;
+    height: 200px;
+}
+
+.globe img{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+.login{
+    margin: 100px 650px;
+    margin-top: -180px;
+    width: 300px;
+    padding: 70px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.login h2{
+    margin: 0, 0, 30px;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login .elemento label{
+    color: black;
+    font-size: 20px;
+}
+
+.login .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.login .elemento input[type="submit"]{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width:768px){
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        margin-left: 25px;
+    }
+
+    .boton{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+        -webkit-transition: 0.2s 0.1s;
+        -moz-transition: 0.2s 0.1s;
+        -ms-transition: 0.2s 0.1s;
+        -o-transition: 0.2s 0.1s;
+}
+
+    .boton:hover{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+    }
+    
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .globe{
+        margin-left: -110px;
+    }
+
+    .globe img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .login{
+        height: 420px;
+        margin-left: 320px;
+    }
+
+    .login  h2{
+        margin-top: -35px;
+    }
+
+    .login .elemento label{
+        font-size: 20px;
+    }
+}
+
+@keyframes muestraMenu {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+    -webkit-animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+    -webkit-transform: rotate(-45deg) translate(-10px, 8px);
+    -moz-transform: rotate(-45deg) translate(-10px, 8px);
+    -ms-transform: rotate(-45deg) translate(-10px, 8px);
+    -o-transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+    -webkit-transform: rotate(45deg) translate(-10px, -8px);
+    -moz-transform: rotate(45deg) translate(-10px, -8px);
+    -ms-transform: rotate(45deg) translate(-10px, -8px);
+    -o-transform: rotate(45deg) translate(-10px, -8px);
+}
